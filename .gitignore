@@ -6,3 +6,6 @@
 *.aux
 *.dvi
 *.tdo
+*.lof
+*.out
+*.toc
