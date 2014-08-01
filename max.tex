@@ -1,66 +1,98 @@
-\documentclass[11pt]{katz_resume}
-\pagenumbering{\gobble}
+\documentclass[pdftex,12pt]{article}
 
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[english]{isodate}
+\usepackage[parfill]{parskip}
+\usepackage[pdftex]{graphicx}
+\usepackage{todonotes} % \todo{note} \listoftodos
+\usepackage{microtype}
+\usepackage{titling}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{longtable}
+
+% Commands
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\title{Maxwell Katz for Dummies}
 \author{Harrison J Katz}
-\email{hjkatz03@gmail.com}
-\streetaddress{950 Marietta St NW Apt 5301}
-\citystatezip{Atlanta, GA 30318}
-\phone{706.801.5289}
-\webpage{www.linkedin.com/in/harrisonkatz}
+\date{\today}
 
 \begin{document}
-\maketitle
+\pagenumbering{Roman}
 
-\section{Experience}
-\begin{jobs}
-    \job{Special Projects Developer}{Nead Werx, Inc.}{May 2014}{Present}{Developer of special projects mainly related to Linux Systems Administration and IT}
-    \job{Junior Mobile Apps Developer}{Nead Werx, Inc.}{May 2012}{May 2014}{Developer for the Mobile App Team designing mobile applications for Android and the Web. (Co-op for 3 semesters and Part-Time for 1)}
-    \job{Classroom Support}{Georgia Institute of Technology}{Nov 2011}{Aug 2013}{Student classroom support assistant in charge of checking rooms to ensure AV equipment works, cleaning and repairing projectors, and helping to solve issues with the AV systems in place.}
-    \experience{Professionally Proficient Skills}{
-        \begin{skills}{6}
-            \item[] Android
-            \item[] Android Studio
-            \item[] CentOS
-            \item[] Git
-            \item[] HTML
-            \item[] Intellij
-            \item[] Java
-            \item[] JavaScript
-            \item[] JSON
-            \item[] Kotlin
-            \item[] LaTeX
-            \item[] Linux
-            \item[] PHP
-            \item[] SQL
-            \item[] SVN
-            \item[] Ubuntu
-            \item[] Vim
-            \item[] XML
-        \end{skills}
-    }
-\end{jobs}
+% Title Page
+\input{./title.tex}
 
-\section{Education}
-\begin{schools}
-    \school{Georgia Institute of Technology}{3.65}{Aug 2011}{Present}{Computer Science Bachelors}{Atlanta, GA}
-    \school{University of Georgia Dual Enrollment}{3.5}{Aug 2010}{May 2011}{Computer Science Degree}{Athens, GA}
-    \school{North Oconee High School}{3.97}{Jan 2007}{May 2011}{High School Diploma}{Bogart, GA}
-\end{schools}
+% Contents
+\newpage
+\tableofcontents
+\todo{Information, emergency, contacts, medicines}
+\todo{Schedule, eating, walks, play}
+\todo{Training, commands, disciplen, rewards}
+\todo{What to do if...}
 
+% Figures
+\newpage
+\listoffigures
 
-\section{Projects \& Research}
-\begin{projects}
-    \project{Nead Money}{http://www.neadmoney.com}{Nead Werx, Inc.}{Jan 2013}{Nead Money is an Android application made to allow Freshbooks' users to edit and view their account.}
-    \project{Critiquestr}{http://www.critiquestr.com}{Nead Werx, Inc.}{Jul 2012}{This is a critiquing app for wine and beer festivals created for the Georgia Aquarium's "Red, White \& Brew" beer festival. It is written in HTML with Jquery, Javascript, and PHP.}
-    \project{Eagle Scout Project}{}{Troop 537\ in Bogart, GA}{Jun 2010}{Developed and facilitated a 100+ hours project to improve the running trails at North Oconee High School (NOHS). The project included measuring, mapping, labeling, and marking the trails, as well as installing a Message Center (with a place for announcements and a large map with the mileage and trails marked and named) at the main entrance.}
-    \project{AmigoBot Research}{http://www.cs.uga.edu/directory/prashant-doshi}{UGA Young DAWGS}{Dec 2010}{In collaboration with Dr. Prashant Doshi of the University of Georgia, I researched various localization strategies and map planning algorithms for the AmigoBot platform utilizing the C++ and Java languages.}
-\end{projects}
+% Document
+\newpage
+\pagenumbering{arabic}
 
-\section{Honors \& Awards}
-\begin{awards}
-    \award{Eagle Scout Award}{BSA Highest Honor}{Jul 2010}
-    \award{GA Tech Dean's List}{GPA 3.65 Overall}{Dec 2011 \-- Present}
-\end{awards}
+\section{Introduction}
 
+So, you've been wrangled into babysitting a dog. Not just any dog though, Max.
+\emph{Sigh.} What are you going to do? Maxwell Katz (no middle name) is a
+rambunctions, destructive, incorrigible goofball, yet he will tug at your
+heartstrings with his lovable face and ears. What should you do? What does he
+eat? \emph{Oh no!} What does he do for fun? What should I do in the case of
+emergency? This may seem like a lot to handle, but fear not, all of this and
+more will be answered in this manual.
+
+\newpage
+\section{Emergency Information}
+
+\begin{table}[H]
+    \begin{longtable}{@{}ll@{}}
+        \toprule
+        \multicolumn{2}{c}{Pet Information}                                                                              \\ \midrule
+        Name          & Maxwell Katz                                                                                     \\
+        Answers to    & "Max!" "Maxwell" "*whistle* Come here!"                                                          \\
+        Breed         & Golden Retriever / Great Pyrenees                                                                \\
+        Color         & Golden White (Toasted Marsh-mellow)                                                              \\
+        Date of Birth & January 9th, 2014                                                                                \\
+        Health Issues & N/A                                                                                              \\
+        Allergies     & Chocolate                                                                                        \\
+        Other         & Has 2 extra toes, a trait of Pyrenees                                                            \\ \midrule
+        \multicolumn{2}{c}{Owner Information}                                                                            \\ \midrule
+        Name          & Harrison John Katz                                                                               \\
+        Phone \#      & 706.801.5289                                                                                     \\
+        Email         & hjkatz03@gmail.com                                                                               \\ \midrule
+        \multicolumn{2}{c}{Emergency Contact}                                                                            \\ \midrule
+        Name          & Laura Katz                                                                                       \\
+        Relation      & Mother of Harrison Katz                                                                          \\
+        Phone \#      & 706.612.4572                                                                                     \\
+        Email         & ldkatz38@gmail.com                                                                               \\ \midrule
+        \multicolumn{2}{c}{Veterinary Information}                                                                       \\ \midrule
+        Name          & Peachtree Hills Animal Hospital                                                                  \\
+        Phone \#      & 404.812.9880                                                                                     \\
+        Address       & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}3106 Early Street\\ Atlanta, GA\\ 30305\end{tabular}} \\
+                      &                                                                                                  \\
+                      &                                                                                                  \\
+        Website       & \url{http://www.peachtreehillsvet.com}                                                           \\
+        Email         & info@peachtreehillsvet.com                                                                       \\
+        Hours         & Monday-Friday, 8am-6pm                                                                           \\
+        Emergency     & \url{http://www.peachtreehillsvet.com/emergencies}                                            
+    \end{longtable}
+    \label{tab:information}
+\end{table}
+
+% Todos
+\newpage
+\listoftodos
 
 \end{document}
