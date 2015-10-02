@@ -15,7 +15,7 @@
 \usepackage{longtable}
 \usepackage{tablefootnote}
 \usepackage{chngpage}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1in,top=0.5in]{geometry}
 
 % Commands
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
@@ -45,12 +45,12 @@
 \section{Introduction}
 
 So, you've been wrangled into babysitting a dog. Not just any dog though, Max.
-\emph{Sigh.} What are you going to do? Maxwell Katz (no middle name) is a
-rambunctious, destructive, incorrigible goofball, yet he will tug at your
-heartstrings with his lovable face and ears. What should you do? What does he
-eat? What does he do for fun? What should I do in the case of
-emergency?! \emph{Oh no!} This may seem like a lot to handle, but fear not, 
-all of this and more will be answered in the manual.
+\emph{Sigh.} What are you going to do? Maxwell Katz is a rambunctious,
+destructive, incorrigible goofball, yet he will tug at your heartstrings with
+his lovable face and ears. What should you do? What does he eat? What does he
+do for fun? What should I do in the case of emergency?! \emph{Oh no!} This may
+seem like a lot to handle, but fear not, all of this and more will be answered
+in the manual.
 
 \bigskip
 
@@ -67,35 +67,36 @@ all of this and more will be answered in the manual.
 \begin{table}[H]
     \begin{longtable}{@{}ll@{}}
         \toprule
-        \multicolumn{2}{c}{Pet Information}                                                                              \\ \midrule
-        Name          & Maxwell Katz                                                                                     \\
-        Answers to    & "Max!" "Maxwell" "*whistle* Come here!"                                                          \\
-        Breed         & Golden Retriever / Great Pyrenees                                                                \\
-        Color         & Golden White (Toasted Marsh-mellow)                                                              \\
-        Weight        & 55 lbs                                                                                           \\
-        Date of Birth & January 9th, 2014                                                                                \\
-        Health Issues & N/A                                                                                              \\
-        Allergies     & Chocolate                                                                                        \\
-        Other         & Has 2 extra toes, a trait of Pyrenees                                                            \\ \midrule
-        \multicolumn{2}{c}{Owner Information}                                                                            \\ \midrule
-        Name          & Harrison John Katz                                                                               \\
-        Phone \#      & 706.801.5289                                                                                     \\
-        Email         & hjkatz03@gmail.com                                                                               \\ \midrule
-        \multicolumn{2}{c}{Emergency Contact}                                                                            \\ \midrule
-        Name          & Laura Katz                                                                                       \\
-        Relation      & Mother of Harrison Katz                                                                          \\
-        Phone \#      & 706.612.4572                                                                                     \\
-        Email         & ldkatz38@gmail.com                                                                               \\ \midrule
-        \multicolumn{2}{c}{Veterinary Information}                                                                       \\ \midrule
-        Name          & Peachtree Hills Animal Hospital                                                                  \\
-        Phone \#      & 404.812.9880                                                                                     \\
-        Address       & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}3106 Early Street\\ Atlanta, GA\\ 30305\end{tabular}} \\
-                      &                                                                                                  \\
-                      &                                                                                                  \\
-        Website       & \url{http://www.peachtreehillsvet.com}                                                           \\
-        Email         & info@peachtreehillsvet.com                                                                       \\
-        Hours         & Monday-Friday, 8am-6pm                                                                           \\
-        Emergency     & \url{http://www.peachtreehillsvet.com/emergencies}                                            
+        \multicolumn{2}{c}{Pet Information}                                                                                    \\ \midrule
+        Name          & Maxwell Katz                                                                                           \\
+        Answers to    & "Max!" "Maxwell" "*whistle* Come here!"                                                                \\
+        Breed         & Golden Retriever / Great Pyrenees                                                                      \\
+        Color         & Golden White (Toasted Marsh-mellow)                                                                    \\
+        Weight        & 105 lbs                                                                                                \\
+        Date of Birth & January 9th, 2014                                                                                      \\
+        Health Issues & N/A                                                                                                    \\
+        Allergies     & Chocolate                                                                                              \\
+        Records       & Contact Harrison for an email copy of records.                                                         \\
+        Other         & Has 2 extra toes, a trait of Pyrenees                                                                  \\ \midrule
+        \multicolumn{2}{c}{Owner Information}                                                                                  \\ \midrule
+        Name          & Harrison John Katz                                                                                     \\
+        Phone \#      & 706.801.5289                                                                                           \\
+        Email         & hjkatz03@gmail.com                                                                                     \\ \midrule
+        \multicolumn{2}{c}{Emergency Contact}                                                                                  \\ \midrule
+        Name          & Laura Katz                                                                                             \\
+        Relation      & Mother of Harrison Katz                                                                                \\
+        Phone \#      & 706.612.4572                                                                                           \\
+        Email         & ldkatz38@gmail.com                                                                                     \\ \midrule
+        \multicolumn{2}{c}{Veterinary Information}                                                                             \\ \midrule
+        Name          & Smyrna Animal Hospital                                                                                 \\
+        Phone \#      & 770.436.2431                                                                                           \\
+        Address       & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}2445 South Cobb Drive SE\\ Smyrna, GA\\ 30082\end{tabular}} \\
+                      &                                                                                                        \\
+                      &                                                                                                        \\
+        Website       & \url{http://smyrnaveterinary.com}                                                                      \\
+        %Email         & info@peachtreehillsvet.com                                                                             \\
+        Hours         & Mon-Fri, 7:30am-6pm; Sat 8am-2pm                                                                       \\
+        %Emergency     & \url{http://www.peachtreehillsvet.com/emergencies}                                            
     \end{longtable}
     \label{tab:information}
 \end{table}
@@ -155,14 +156,13 @@ free to place Max in his crate whenever he becomes too much of a hazard.
         \begin{itemize}
             \item Crating Max for sleep time is OK
             \item Max can be petted while he is asleep
-            \item Max sheds, so be aware of letting him on the bed
+            \item Max sheds, so be aware of letting him on the bed or furniture
             \item Max sleeps in peculiar ways, this is OK
                 (See Fig~\ref{fig:sleeping} on page~\pageref{fig:sleeping})
         \end{itemize}
-    \item \textbf{Walks:} Walking Max is a fun adventure. He is learning that he
-        is strong, and WILL PULL. He has a special harness that can be used if he 
-        gets out of hand. See how to put on the Easy Walk Harness on
-        page~\pageref{itm:how_to_harness}.
+    \item \textbf{Walks:} Walking Max is a fun adventure. He is VERY strong so I
+        advise using his gentle leader collar. See how to put on the Gentle Leader
+        on page~\pageref{itm:how_to_gentle_leader}.
         \begin{itemize}
             \item Walks can be as short as 30 secs, or as long as 30 mins
             \item Some walks are pee, some poop, some both
@@ -174,7 +174,7 @@ free to place Max in his crate whenever he becomes too much of a hazard.
     \item \textbf{Feeding:} Maxwell eats twice a day, once in the morning and
         once in the evening. He also receives water during each meal.
         \begin{itemize}
-            \item Each meal consists of 1.5 cups of dog food
+            \item Each meal consists of 1 cup of dog food
                 (See Fig~\ref{fig:food_bowl_filled} on
                 page~\pageref{fig:food_bowl_filled})
             \item Max is trained to wait until eating
@@ -189,13 +189,15 @@ free to place Max in his crate whenever he becomes too much of a hazard.
                 (See List~\ref{itm:included_items} on
                 page~\pageref{itm:included_items})
             \item Max loves to play in the dirt and mud
-            \item Max is very energetic, you have been warned
+            \item Max is very energetic; you have been warned
                 (See Fig~\ref{fig:at_the_park} on
                 page~\pageref{fig:at_the_park})
         \end{itemize}
 \end{itemize}
 
-\bigskip
+\clearpage
+
+\vspace*{\fill}
 
 \begin{figure}[h!]
     \centering
@@ -209,11 +211,11 @@ free to place Max in his crate whenever he becomes too much of a hazard.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=.35\textwidth]{./images/max/sleeping.jpg}
-    \caption{Maxwell sleeping normally\ldots mostly\ldots}
+    \caption{Maxwell sleeping normally}
     \label{fig:sleeping}
 \end{figure}
 
-\bigskip
+\vspace*{\fill}
 
 \clearpage
 \newpage
@@ -222,7 +224,7 @@ free to place Max in his crate whenever he becomes too much of a hazard.
 Here is a list of all of the items that you will receive for watching Maxwell.
 Most of it will be in his bag. You will not need to use all of these items, and
 don't worry if things get lost. In all honesty Max will probably find a toy to
-take home, and one to leave there. You have been warned.
+take home, and one to leave there.
 
 \begin{enumerate}\label{itm:included_items}
     \item Maxwell Katz
@@ -245,16 +247,15 @@ take home, and one to leave there. You have been warned.
             \item Shampoo
             \item Toys
                 \begin{enumerate}
-                    \item Elk Antler
+                    \item Bone
                     \item Tennis Ball
-                    \item Kong Ball
-                    \item Chew Treats
+                    \item Tug-of-War
                 \end{enumerate}
         \end{enumerate}
     \item Food Bowls (x2)
     \item Food Container
     \item Leash
-    \item Easy Walk Harness
+    \item Gentle Leader Collar
 \end{enumerate}
 
 \newpage
@@ -270,11 +271,14 @@ prefaced with a short loop-de-loop whistle to make him pay attention.
     \label{tab:commands}
     \begin{adjustwidth}{-4.5cm}{-4.5cm}
         \begin{center}
+            \bgroup
+            \def\arraystretch{1.3} % add padding to rows
             \begin{tabular}{lp{.3\textwidth}p{.3\textwidth}p{.3\textwidth}}
                 Command     & Hand Motion                                      &
                 Description                                           & Notes
                 \\ \hline \\
                 Bad Dog     & N/A                                              & Term of extreme discipline                            & Shouted with angry eyes                                            \\
+                Catch       & N/A                                              & He might catch what you toss                          & Toss something to catch                                            \\
                 Come Here   & *snap* Point to side                             & Get Maxwell to come to you                            & Should be prefaced with Maxwell                                    \\
                 Down        & Pinched fingers, downward bow motion             & Laying down                                           & Sit, then down                                                     \\
                 Drop it     & Hold hand below mouth for item                   & Drops item in mouth / opens mouth                     & Need to "trade" another item for what he has                       \\
@@ -298,6 +302,7 @@ prefaced with a short loop-de-loop whistle to make him pay attention.
                 Wait        & Hand stop signal towards his nose                & Wait here, stay                                       & Start with sit, then wait. Always release, or say Eh and try again \\
                 Watch me    & Two fingers, point at Max's eyes, then your eyes & Watch me, focus                                       & "I've got my eyes on you" motion. Works well with a treat         
             \end{tabular}
+            \egroup
         \end{center}
     \end{adjustwidth}
 \end{table}
@@ -305,10 +310,9 @@ prefaced with a short loop-de-loop whistle to make him pay attention.
 \newpage
 \section{Rewards and Discipline}
 
-Maxwell is still a puppy, so he is still learning. In fact, he is always
-learning, and like a child he is impressionable. Please keep in mind that by
-accepting to watch Max that you will be expected to continue his training and
-discipline.  This is not a big undertaking. 
+Maxwell is always learning, and like a child he is impressionable. Please keep
+in mind that by accepting to watch Max that you will be expected to continue his
+training and discipline. This is not a big undertaking. 
 
 \bigskip
 
@@ -357,7 +361,7 @@ various situations.
         bite, scratch, tackle, or otherwise, shout "ouch!". This will let
         him know that he has been playing too rough, or hurt you in some way.
         Normally after this I calm him down and give him something to chew on.
-    \item \textbf{Chewing:} When (not if) you catch him chewing on something hew
+    \item \textbf{Chewing:} When (not if) you catch him chewing on something he
         shouldn't be chewing, state "No bite". Then give him a toy he can chew
         on. Remember that you can always use the bitter spray to keep him from
         gnawing on furniture, cords, and the like. (See List~\ref{itm:included_items} on
@@ -367,6 +371,8 @@ various situations.
         Table~\ref{tab:commands} on page~\pageref{tab:commands}). If that
         doesn't work, open his mouth and remove the item.
     \item \textbf{Growling:} Calm him down with petting and a soothing "shhhh".
+    \item \textbf{Jumping/Rowdy:} Put his Gentle Leader Collar on to calm him
+        down. (See page~\pageref{itm:how_to_gentle_leader})
     \item \textbf{Playing Rough:} If Max is playing rough when he should be
         calming down, follow the above. Get him to lay down, then pet him and
         soothe him with a "shhhh".
@@ -379,8 +385,8 @@ various situations.
 This is not an exhaustive list by any means. Generally a firm "Eh" and a stern
 voice with a look of disapproval will fix a problem temporarily. Remember that
 you can always put him away in his crate as both punishment and nap time. If you
-have any major problems please feel free to call, text, or email my contact
-information. (See Table~\ref{tab:information} on page~\pageref{tab:information})
+have any major problems please feel free to call, text, or email me.
+(See Table~\ref{tab:information} on page~\pageref{tab:information})
 
 \newpage
 \section{How to\ldots}
@@ -392,9 +398,9 @@ continence. Should you have any other questions or concerns, please contact me.
 
 \subsection{How to feed Max}
 \begin{enumerate}\label{itm:how_to_feed}
-    \item Fill his water bowl $\frac{1}{2}$ way up with cold tap water
+    \item Fill his water bowl $\frac{3}{4}$ way up with cold tap water
     \item Open the food container top (See Fig~\ref{fig:food_container_open})
-    \item Fill his food bowl with $1 \frac{1}{2}$ cups of food (See Fig~\ref{fig:food_bowl_filled})
+    \item Fill his food bowl with 1 cup of food (See Fig~\ref{fig:food_bowl_filled})
     \item Release Max to eat
 \end{enumerate}
 
@@ -420,26 +426,11 @@ continence. Should you have any other questions or concerns, please contact me.
 \begin{enumerate}\label{itm:how_to_walk}
     \item Call Maxwell to the door saying, "Let's go outside!"
     \item Get Maxwell to sit, waiting
-    \item Put the leash on Max (either leash)
+    \item Put the Gentle Leader Collar and leash on Max
     \item Go outside, while walking keep Max on a short leash
         (See Fig~\ref{fig:walking_max})
     \item It should be loose, yet ready to tug
-        (See Fig~\ref{fig:short_leash})
 \end{enumerate}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=.35\textwidth]{./images/how_to/walk_max/walking_max.jpg}
-    \caption{Maxwell being walked at the correct leash length.}
-    \label{fig:walking_max}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=.35\textwidth]{./images/how_to/walk_max/short_leash.jpg}
-    \caption{Maxwell being walked at the correct leash length.}
-    \label{fig:short_leash}
-\end{figure}
 
 \subsection{How to clean up an accident}
 \begin{enumerate}\label{itm:how_to_clean_accident}
@@ -456,51 +447,53 @@ continence. Should you have any other questions or concerns, please contact me.
     \item Repeat as necessary
 \end{enumerate}
 
-\subsection{How to put on the Easy Walk Harness}
-\begin{enumerate}\label{itm:how_to_harness}
-    \item See Fig~\ref{fig:harness_steps} on page~\pageref{fig:harness_steps}.
-    \item Place the harness on the floor with the dark towards you, and
+\subsection{How to put on the Gentle Leader Collar \& Leash}
+\begin{enumerate}\label{itm:how_to_gentle_leader}
+    \item See Fig~\ref{fig:gentle_leader_steps} on page~\pageref{fig:gentle_leader_steps}.
+    \item Place the collar on the floor with the dark towards you, and
         the light side towards Max.
     \item Connect the dark band around Max's neck and chest, attaching the clasp
         in the back behind his shoulders.
     \item Run the light side underneath Max's underside and attach the clasp to
         on Max's right side shoulder.
     \item Attach the leash to the front ring on Max's chest.
-    \item When walking Max with this harness, maintain a loose leash.
-    \item Make sure the harness is snug and secure.
-    \item Make sure that the harness' "O" rings reside on Max's shoulders where
+    \item When walking Max with this collar, maintain a loose leash.
+    \item Make sure the collar is snug and secure.
+    \item Make sure that the collar' "O" rings reside on Max's shoulders where
         his legs connect to his body.
 \end{enumerate}
 
 \begin{figure*}
     \subfigure[1]{
-        \label{fig:flat_harness}
-        \includegraphics[width=0.35\textwidth]{./images/how_to/harness/flat_harness.jpg}
+        \label{fig:flat_gentle_leader}
+        \includegraphics[width=0.35\textwidth]{./images/how_to/gentle_leader/flat_gentle_leader.jpg}
     }
     \hspace*{\fill}
     \subfigure[2]{
-        \label{fig:dark_strap}
-        \includegraphics[width=0.35\textwidth]{./images/how_to/harness/dark_strap.jpg}
+        \label{fig:open_loop}
+        \includegraphics[width=0.35\textwidth]{./images/how_to/gentle_leader/open_loop.jpg}
     }
 
     \\
+    \bigskip
     \subfigure[3]{
-        \label{fig:light_strap}
-        \includegraphics[width=0.35\textwidth]{./images/how_to/harness/light_strap.jpg}
+        \label{fig:over_the_nose}
+        \includegraphics[width=0.35\textwidth]{./images/how_to/gentle_leader/over_the_nose.jpg}
+    }
+
+    \\
+    \bigskip
+    \subfigure[4]{
+        \label{fig:behind_the_ear}
+        \includegraphics[width=0.35\textwidth]{./images/how_to/gentle_leader/behind_the_ear.jpg}
     }
     \hspace*{\fill}
-    \subfigure[4]{
-        \label{fig:leash_attach}
-        \includegraphics[width=0.35\textwidth]{./images/how_to/harness/leash_attached.jpg}
-    }
-
-    \\
     \subfigure[5]{
-        \label{fig:harness_walk}
-        \includegraphics[width=0.35\textwidth]{./images/how_to/harness/harness_walk.jpg}
+        \label{fig:attach_the_leash}
+        \includegraphics[width=0.35\textwidth]{./images/how_to/gentle_leader/attach_the_leash.jpg}
     }
-    \caption{How to put on the Easy Walk Harness.}
-    \label{fig:harness_steps}
+    \caption{How to put on the Gentle Leader Collar.}
+    \label{fig:gentle_leader_steps}
 \end{figure*}
 
 \newpage
@@ -532,7 +525,7 @@ Good luck watching Max, I hope everything goes well!
             \item Baths (he's wary of them)
             \item Being moved forcefully (dragging by the collar, pushing him,
                 etc\ldots)
-            \item Easy Walk Harness
+            \item Gentle Leader Collar
         \end{enumerate}
     \item Things to note
         \begin{enumerate}
@@ -546,8 +539,8 @@ Good luck watching Max, I hope everything goes well!
             \item Maxwell can be left in his crate for a maximum of 8 hours
                 without food, water, or walks
             \item Maxwell is friendly and can be around children and other dogs
-            \item Maxwell is a goofball (See Fig~\ref{fig:goofball} on
-                page~\pageref{fig:goofball})
+            \item Maxwell is a goofball (See Fig~\ref{fig:rocket_ship} on
+                page~\pageref{fig:rocket_ship})
         \end{enumerate}
 \end{enumerate}
 
@@ -569,9 +562,9 @@ Good luck watching Max, I hope everything goes well!
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.35\textwidth]{./images/max/goofball.jpg}
-    \caption{Maxwell being a goofball.}
-    \label{fig:goofball}
+    \includegraphics[width=.35\textwidth]{./images/max/rocket_ship.jpg}
+    \caption{Maxwell being a rocket ship.}
+    \label{fig:rocket_ship}
 \end{figure}
 
 \end{document}
